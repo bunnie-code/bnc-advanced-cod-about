@@ -1,73 +1,52 @@
 # Bunniecode Advanced COD for WooCommerce
 
-[![Requires at least: 5.0](https://img.shields.io/badge/Requires%20at%20least-5.0-blue.svg)](https://wordpress.org/about/requirements/)
-[![WC tested up to: 8.3](https://img.shields.io/badge/WC%20tested%20up%20to-8.3-blue.svg)](https://woocommerce.com/)
-[![Requires PHP: 7.2+](https://img.shields.io/badge/PHP-7.2%2B-blue.svg)](https://wordpress.org/about/requirements/)
-[![License: GPLv2+](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+Rules and fees for cash on delivery. Decide where, when and for whom WooCommerce offers cash on delivery, and what it costs.
 
-> An advanced Cash on Delivery payment gateway extension for WooCommerce with extended configuration options.
+A commercial plugin by [Bunniecode](https://github.com/bunnie-code). It needs a licence key from [bunniecode.eu](https://bunniecode.eu) to activate.
 
-This plugin extends the default WooCommerce Cash on Delivery (COD) payment gateway, allowing you to have full control over when and how COD is offered to your customers. It provides a robust rules engine to set availability conditions and allows you to configure advanced fees based on the cart contents.
+## Features
 
-**This is a commercial plugin and requires a valid license key to be activated.**
+**Where and when cash on delivery appears**
 
----
+- Minimum and maximum order amount.
+- Countries, states, cities and postal codes, each set to include or exclude. Postal code ranges are written as `10001...10010`.
+- Shipping zones and shipping classes, each set to include or exclude. A shipping class rule matches when any product, or every product, in the cart has that class.
+- Off for guests, off for registered customers, or on for both.
 
-## ✨ Features
+**What cash on delivery costs**
 
-### 🚦 Conditional Availability (Restrictions)
+- A fixed fee or a percentage of the cart subtotal.
+- Taxable or not taxable.
+- No fee above an order amount you choose.
+- A separate fee for local pickup orders.
 
-Restrict the availability of the Cash on Delivery option based on various conditions:
+**For developers**
 
-*   **💰 Order Value:** Set a minimum or maximum cart subtotal for COD to be available.
-*   **🌍 Geography:** Restrict by Country, State, City, or Postal Code. Each can be set to either 'Include' or 'Exclude'. Postal codes support ranges (e.g., `90210-90220`).
-*   **🚚 Shipping:** Restrict by Shipping Zone or Shipping Class, also with 'Include'/'Exclude' modes. Shipping class restrictions can match if *any* or *all* products in the cart meet the criteria.
-*   **👤 User Role:** Configure availability for guest users or registered users only.
+- Debug mode that logs each availability check to the browser console.
 
-### 💸 Advanced Fees
+## Requirements
 
-Charge extra for Cash on Delivery orders with a flexible fee system:
+| | |
+|---|---|
+| Current version | 1.4.7 |
+| WordPress | 5.0 or later |
+| WooCommerce | 5.0 or later, tested up to 8.3 |
+| PHP | 7.2 or later |
 
-*   **🔧 Fee Types:** Charge a `fixed` amount or a `percentage` of the cart subtotal.
-*   **🎉 Fee Waiver:** Automatically waive the fee for orders over a specified amount.
-*   **🏠 Local Pickup Override:** Set a separate, specific fee for orders using 'Local Pickup'.
-*   **🧾 Tax:** Configure the fee as taxable or non-taxable.
+## Installation
 
-### 👨‍💻 User Experience & Debugging
+1. In WordPress, go to **Plugins → Add New → Upload Plugin** and upload the ZIP.
+2. Activate the plugin.
+3. Enter your licence key on the plugin's licence page.
 
-*   **💬 Clarity:** Provides clear, dynamic feedback on the checkout page, showing the applicable fee and explaining why COD is unavailable if restricted.
-*   **🐞 Debug Mode:** A developer option to enable detailed logging in the browser's console for easy troubleshooting.
+## Configuration
 
----
+Go to **WooCommerce → Settings → Payments → Advanced Cash on Delivery**. All restrictions and fees are on that screen.
 
-## 🚀 Installation
+## Support
 
-1.  Upload the plugin files to the `/wp-content/plugins/bunniecode-advanced-cod` directory, or install the plugin through the WordPress plugins screen directly.
-2.  Activate the plugin through the 'Plugins' screen in WordPress.
-3.  Navigate to the plugin's license page to activate your license key.
+Licensed customers get updates and support through [bunniecode.eu](https://bunniecode.eu).
 
----
+## License
 
-## ⚙️ Configuration
-
-1.  Navigate to `WooCommerce > Settings > Payments`.
-2.  Click on **Cash on delivery**.
-3.  Here you will find all the advanced configuration options for the plugin.
-
----
-
-## 📄 License
-
-This plugin is a commercial product and requires a valid license key for activation and updates. The license key can be purchased from [bunniecode.eu](https://bunniecode.eu).
-
-The PHP code is licensed under GPLv2 or later. See `LICENSE` for details.
-
----
-
-## 📜 Changelog
-
-### [1.4.6] - 2025-12-02
--   **Tweak** - Updated plugin version in readme.
-
-### [1.4.5]
--   Initial release.
+GPL v2 or later. A licence key gives access to updates and support.
